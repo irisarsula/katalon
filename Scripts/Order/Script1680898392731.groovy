@@ -21,13 +21,16 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://www.saucedemo.com/')
 
-WebUI.click(findTestObject('Object Repository/Page_Swag Labs/input_Swag Labs_user-name'))
-
 WebUI.setText(findTestObject('Object Repository/Page_Swag Labs/input_Swag Labs_user-name'), 'standard_user')
 
 WebUI.setEncryptedText(findTestObject('Object Repository/Page_Swag Labs/input_Swag Labs_password'), 'qcu24s4901FyWDTwXGr6XA==')
 
 WebUI.click(findTestObject('Object Repository/Page_Swag Labs/input_Swag Labs_login-button'))
+
+WebUI.click(findTestObject('Object Repository/Page_Swag Labs/span_Name (A to Z)Name (A to Z)Name (Z to A_3f2346'))
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Swag Labs/select_Name (A to Z)Name (Z to A)Price (low_f7e90a'), 
+    'lohi', false)
 
 WebUI.click(findTestObject('Object Repository/Page_Swag Labs/button_Add to cart'))
 
@@ -37,13 +40,19 @@ WebUI.click(findTestObject('Object Repository/Page_Swag Labs/button_Add to cart_
 
 WebUI.click(findTestObject('Object Repository/Page_Swag Labs/button_Add to cart_1_2_3'))
 
-WebUI.click(findTestObject('Object Repository/Page_Swag Labs/a_4'))
+WebUI.click(findTestObject('Object Repository/Page_Swag Labs/div_Sauce Labs Bolt T-Shirt'))
+
+WebUI.click(findTestObject('Object Repository/Page_Swag Labs/button_Remove'))
+
+WebUI.click(findTestObject('Object Repository/Page_Swag Labs/button_Back to products'))
+
+WebUI.click(findTestObject('Object Repository/Page_Swag Labs/a_3'))
 
 WebUI.click(findTestObject('Object Repository/Page_Swag Labs/button_Checkout'))
 
 WebUI.setText(findTestObject('Object Repository/Page_Swag Labs/input_Checkout Your Information_firstName'), 'Test')
 
-WebUI.setText(findTestObject('Object Repository/Page_Swag Labs/input_Checkout Your Information_lastName'), 'One')
+WebUI.setText(findTestObject('Object Repository/Page_Swag Labs/input_Checkout Your Information_lastName'), 'Order')
 
 WebUI.setText(findTestObject('Object Repository/Page_Swag Labs/input_Checkout Your Information_postalCode'), '1234')
 
@@ -52,4 +61,10 @@ WebUI.click(findTestObject('Object Repository/Page_Swag Labs/input_Cancel_contin
 WebUI.click(findTestObject('Object Repository/Page_Swag Labs/button_Finish'))
 
 WebUI.click(findTestObject('Object Repository/Page_Swag Labs/button_Back Home'))
+
+WebUI.click(findTestObject('Object Repository/Page_Swag Labs/button_Open Menu'))
+
+WebUI.click(findTestObject('Object Repository/Page_Swag Labs/a_Logout'))
+
+WebUI.closeBrowser()
 
